@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", Sans-serif;;
+}
+body{
+    height: 100vh;
+}
+.navbar{
+    background-color: #382307;
+}
+
+
+
+.menu-container{
+    background-image: url(../img/imagem1.jpeg);
+    background-attachment: fixed;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
