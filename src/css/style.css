@@ -1,23 +1,100 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Sora", Sans-serif;;
+    font-family: "Sora", Sans-serif;
+    ;
 }
-body{
+
+body {
     height: 100vh;
 }
-.navbar{
-    background-color: #382307;
+
+.logo {
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 15px;
 }
 
+.logo a {
+    text-decoration: none;
+    color: aliceblue;
+}
 
+.navbar {
+    overflow: hidden;
+    background-color: #382307;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 25px 20px;
+}
 
-.menu-container{
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.nav-links a:hover {
+    background-color: #2e2e32;
+    border-radius: 15px;
+}
+
+.menu-container {
+    margin-top: 90px;
     background-image: url(../img/imagem1.jpeg);
     background-attachment: fixed;
     width: 100%;
     background-size: cover;
     background-position: center;
     height: 800px;
+}
+
+.sub-menu-container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-menu {
+    border: 10px solid #FFD700;
+    padding: 20vh;
+}
+
+.sub-menu img {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-menu h1{
+    font-size: 2.9rem;
+     margin-bottom: .2rem;
+}
+.sub-menu h2{
+    font-size: 2rem;
+     margin-bottom: .3rem;
+}
+.sub-menu h1,h2{
+    color: #D4AF37;
+    font-weight: bold;
+}
+.textMenu{
+    margin-top: 0;
+    margin-bottom: .3rem;
+    font-size: 1.5rem;
 }
