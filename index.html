@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Silva & Associados Advocacia</title>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="logo"><a href="#">Silva & Associados Advocacia</a></div>
+        <div class="burguer" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul class="nav-links">
             <li><a href="">Home</a></li>
             <li><a href="">Nosso Escritório</a></li>
@@ -23,21 +28,48 @@
         <div class="menu-container">
             <div class="sub-menu-container">
                 <div class="sub-menu">
-                    <a href="#"><img src="src/img/silva_associados-removebg-preview.png" alt="Logo Silva & Associados"></a>
+                    <a href="#"><img src="src/img/silva_associados-removebg-preview.png"
+                            alt="Logo Silva & Associados"></a>
                     <h1>Escritório de Advocacia Geral</h1>
                     <h2>Plantão de 24 horas</h3>
-                    <p class="textMenu">Garanta seus direitos com o suporte jurídico que você merece.</p>
-                    <p class="textMenu">Atendimento em toda a cidade de São Paulo e Região Metropolitana.</p>
-                    <p class="textMenu">Fale conosco agora mesmo.</p>
+                        <p class="textMenu">Garanta seus direitos com o suporte jurídico que você merece.</p>
+                        <p class="textMenu">Atendimento em toda a cidade de São Paulo e Região Metropolitana.</p>
+                        <p class="textMenu">Fale conosco agora mesmo.</p>
                 </div>
             </div>
         </div>
-        <div class="oEscritorio">
-            <h1>O Escritório</h1>
-        </div>
+        <Section class="escritorio">
+            <div class="conteudo">
+                <h2>O Escritório</h2>
+                <p>A Silva & Associados Advocacia representa a vanguarda do direito em São Paulo. Somos um escritório
+                    que alia agilidade, modernidade e uma postura combativa, mas também colaborativa, para garantir os
+                    melhores acordos para nossos clientes. Nosso compromisso inabalável é com a excelência no
+                    atendimento personalizado, tratando cada caso com a dedicação que ele merece.</p>
+                <p>Nossa equipe multidisciplinar é pioneira na modernização da linguagem jurídica, tornando o complexo
+                    ambiente legal brasileiro acessível para clientes nacionais e internacionais. Atuamos com expertise
+                    em diversas áreas, com destaque para o direito empresarial e imobiliário, oferecendo soluções
+                    completas nas esferas preventiva, consultiva e contenciosa.
+                    <br>
+                    Na Silva & Associados, seu sucesso é nossa prioridade.
+                </p>
+                <button>Saiba mais</button>
+            </div>
+            <div class="anos">
+                <h3>18</h3>
+                <p>ANOS DE EXPERIÊNCIA</p>
+            </div>
+        </Section>
+        <section>
 
-
+        </section>
     </main>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('open');
+        }
+    </script>
 </body>
 
 </html>
