@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="imagex/png" href="./src/img/silva&associados.png">
+    <link rel="stylesheet" href="src/css/StyleEscritorio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Escritório</title>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="#">Silva & Associados Advocacia</a></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Nosso Escritório</a></li>
+            <li><a href="#">Seus Direitos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <div class="burguer" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Bem-vindo à Silva & Associados</h1>
+        <p>Este é apenas um exemplo com o menu funcional.</p>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

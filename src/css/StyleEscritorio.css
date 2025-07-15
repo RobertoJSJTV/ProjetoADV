@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif, "Sora", Sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #382307;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #2e2e32;
+    border-radius: 15px;
+}
+
+.burguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burguer span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #382307;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    .nav-links.open {
+        max-height: 300px;
+        padding: 20px 0;
+    }
+
+    .burguer {
+        display: flex;
+    }
+}
+
+main {
+    padding-top: 100px;
+    text-align: center;
+}
