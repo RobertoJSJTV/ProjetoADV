@@ -60,6 +60,15 @@ body {
     border-radius: 2px;
     transition: 0.3s;
 }
+.imagem-fundo-container{
+    margin-top: 65px;
+    background-image: url(../img/direito.jpg);
+    background-attachment: scroll;
+    width: 100%;
+    background-size: cover;
+    background-position: initial;
+    height: 400px;
+}
 
 @media (max-width: 768px) {
     .nav-links {
@@ -89,3 +98,4 @@ main {
     padding-top: 100px;
     text-align: center;
 }
+

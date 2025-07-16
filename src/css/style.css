@@ -365,7 +365,7 @@ h2 {
         position: absolute;
         top: 40px;
         right: 0;
-        background-color: #382307;
+        background: linear-gradient(90deg, #614623, #331f04);
         width: 100%;
         flex-direction: column;
         align-items: center;
@@ -389,7 +389,7 @@ h2 {
     .menu-container {
         margin-top: 0;
         background-image: url(../img/imagem1.jpeg);
-        background-attachment: fixed;
+        background-attachment: scroll;
         width: 100%;
         background-size: cover;
         background-position: center;
@@ -426,7 +426,7 @@ h2 {
     .menu-container {
         margin-top: 0;
         background-image: url(../img/imagem1.jpeg);
-        background-attachment: fixed;
+        background-attachment: scroll;
         width: 100%;
         background-size: cover;
         background-position: center;
