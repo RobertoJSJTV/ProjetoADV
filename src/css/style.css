@@ -113,8 +113,11 @@ body {
 
 .sub-menu h1,
 h2 {
-    color: #D4AF37;
     font-weight: bold;
+    background-image: url(../img/textura.avif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .textMenu {
@@ -316,11 +319,13 @@ h2 {
     align-items: flex-start;
     flex-grow: 1;
 }
-.social-icons{
+
+.social-icons {
     margin-bottom: 15px;
     display: flex;
     gap: 15px;
 }
+
 .social-icons a {
     color: #fff;
     font-size: 24px;
@@ -337,16 +342,19 @@ h2 {
     line-height: 1.5;
     margin: 0;
 }
-.endereco a{
+
+.endereco a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
-.endereco a:hover{
+
+.endereco a:hover {
     color: #ffd700;
     text-decoration: none;
     font-weight: bold;
 }
+
 
 @media screen and (max-width: 1090px) {
 
@@ -410,6 +418,15 @@ h2 {
         flex-direction: column;
         justify-content: center;
         display: flex;
+    }
+
+    .direitos-container img {
+        max-width: 900px;
+        width: 70%;
+        border-radius: 8px 0px 0px 8px;
+        margin: 0;
+        padding: 0;
+        display: block;
     }
 }
 

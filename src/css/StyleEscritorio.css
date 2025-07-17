@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #382307;
+    background: linear-gradient(90deg, #614623, #331f04);
     padding: 20px;
     position: fixed;
     top: 0;
@@ -60,7 +60,8 @@ body {
     border-radius: 2px;
     transition: 0.3s;
 }
-.imagem-fundo-container{
+
+.imagem-fundo-container {
     margin-top: 65px;
     background-image: url(../img/direito.jpg);
     background-attachment: scroll;
@@ -70,7 +71,121 @@ body {
     height: 400px;
 }
 
+.imagem-fundo h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    background-image: url(../img/textura.avif);
+    background-clip: text;
+    color: transparent;
+    padding: 90px 0 0 70px;
+    background-color: #eeeeee;
+}
+
+.conteudo {
+    justify-self: center;
+    width: 500px;
+}
+
+.conteudo h1,h2 {
+    margin-bottom: 2.0rem;
+}
+
+.conteudo p {
+    text-align: start;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0px;
+    padding-bottom: 30px;
+}
+
+.conteudo ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.conteudo ul li::before {
+    content: "•";
+    color: #382307;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em
+}
+.contatos {
+    background: linear-gradient(90deg, #614623, #331f04);
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.contatos-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.contatos-container img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 40px;
+    flex-shrink: 0;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
+}
+
+.endereco p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.endereco a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.endereco a:hover {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
+    .logo {
+        color: aliceblue;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+
     .nav-links {
         position: absolute;
         top: 70px;
@@ -92,10 +207,25 @@ body {
     .burguer {
         display: flex;
     }
+
+    .conteudo {
+        justify-self: center;
+        width: 200px;
+    }
+
+    .conteudo p {
+        text-align: start;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        margin: 0px;
+        padding-bottom: 30px;
+        text-align: justify;
+    }
 }
 
 main {
     padding-top: 100px;
-    text-align: center;
-}
 
+    background-color: #eeeeee;
+}
